@@ -20,8 +20,10 @@
 /* Define memory regions. */
 MEMORY
 {
-	rom (rx) : ORIGIN = 0x08000000, LENGTH = 1024K
-	ram (rwx) : ORIGIN = 0x20000000, LENGTH = 128K
+  /* NOTE K = KiBi = 1024 bytes */
+  rom : ORIGIN   = 0x08000000, LENGTH = 1M
+  ram : ORIGIN     = 0x20000000, LENGTH = 128K
+  ccm_ram : ORIGIN = 0x10000000, LENGTH = 64K
 }
 
 /* Include the common ld script from libopenstm32. */
