@@ -76,7 +76,7 @@
 #define LED_PORT GPIOC
 #define LED_PORT_UART GPIOA
 #define LED_UART GPIO1
-#define LED_IDLE_RUN GPIO1
+#define LED_IDLE_RUN GPIO15
 #define LED_ERROR GPIO14
 #define LED_BOOTLOADER GPIO13
 
@@ -121,7 +121,7 @@
  */
 
 /* Hardware definitions... */
-#define JTAG_PORT 	GPIOC
+#define JTAG_PORT 	GPIOA
 #define TDI_PORT	JTAG_PORT
 #define TMS_PORT	JTAG_PORT
 #define TCK_PORT	JTAG_PORT
